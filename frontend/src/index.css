@@ -1,0 +1,356 @@
+/* Niaj Modified Start */
+body {
+  background-color: #f5f5f5;
+  color: #000;
+}
+.container {
+  /* width: 100%; */
+  padding-right: unset;
+  padding-left: unset;
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+/* .card {
+  background-color: #f0f0f0;
+  margin: 1rem 0;
+} */
+
+/* .list-group-item {
+  background-color: #f9f9f9;
+  color: #000;
+} */
+/* .list-group-item:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+} */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.table {
+  color: #000;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  color: #282c34;
+}
+
+/* Niaj Modified End */
+
+main {
+  min-height: 80vh;
+}
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2 {
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+h3 {
+  padding: 1rem 0;
+}
+.rating span {
+  margin: 0.1rem;
+}
+
+/* -----------------Carousel Prev Start-------------------- */
+/* .carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+
+.bg-light-blue {
+  background-color: #0070dc;
+  background-image: url('ProductCarouselBackgroundImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f9f9f9;
+}
+.carousel-caption {
+  position: relative;
+}
+.carousel-caption h2 {
+  color: #fff;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+} */
+/* .carousel img { */
+/* width: 500px; */
+/* width: 100%;
+  height: 300px;
+  padding: 30px; */
+/* } */
+
+/* .carousel a {
+  margin: 0 auto;
+} */
+
+.carousel-indicators li {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+}
+/* -----------------Carousel Prev End-------------------- */
+
+/* ------------------------------------------------------------------------ */
+/* ---------------------------Carousel CSS Start--------------------------- */
+/* ------------------------------------------------------------------------ */
+
+.carousel {
+  /*------------------
+  position: relative;
+  ---------------------*/
+
+  position: relative;
+  /* border: 3px solid red; */
+}
+/* Nested in -> .carousel -> */
+.carousel .carousel-inner {
+  /*----------------
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    ----------------------*/
+
+  /* height: 500px; */
+  border: 0px solid yellow;
+}
+.carousel .carousel-inner .carousel-item {
+  /* ----------------------------
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  ----------------------------- */
+  text-align: center;
+  background-color: transparent;
+  /* border: 5px solid red; */
+}
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  /* ----------------------------
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  ----------------------------- */
+  position: relative;
+  right: unset;
+  bottom: unset;
+  left: unset;
+  color: #000;
+  /* background-color: rgba(0, 0, 0, 1); */
+  /* border: 5px solid black; */
+}
+
+/* -------- Nested in -> .carousel ------------- */
+.carousel .carousel-indicators {
+  /* -------------------
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+  ----------------------------------*/
+  border: 0px solid red;
+}
+/* .carousel-indicators [data-bs-target] { */
+/*---------------
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+  -----------------------*/
+/* background-color: #000;
+  width: 50px;
+  height: 5px; */
+/* } */
+/* .carousel .carousel-indicators li {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 50px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+} */
+/* Nested in -> .carousel -> */
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  /*--------------------------------------------
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  ------------------------------*/
+  opacity: 1;
+  border: 0px solid black;
+}
+
+/* ------------------------------------------------------------------------ */
+/* ---------------------------Carousel CSS End----------------------------- */
+/* ------------------------------------------------------------------------ */
+
+/* PDF CSS */
+/*
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*/
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.control-panel {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+  color: lightgray;
+}
+.readPdf {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.readPdf-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .readPdf-logo {
+    animation: readPdf-logo-spin infinite 5s linear;
+  }
+}
+
+@keyframes readPdf-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#loader {
+  z-index: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(155, 155, 155, 0.7);
+}
+
+.clickable {
+  cursor: pointer;
+}
