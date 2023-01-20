@@ -1,7 +1,7 @@
 import React from 'react'
 import { Alert } from 'react-bootstrap'
 
-const Message = ({ variant, children }) => {   // Passing two Props-> variant and children
+const Message = ({ variant, children }) => {   // Passing two Props-> variant and children here
     return (
         <Alert variant={variant}>
             {children}
