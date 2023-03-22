@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className=''>
             <ListGroup variant='flush' className='bg-dark text-center py-5'>
-                <strong>Copyright &copy; NiajM</strong>
+                <strong>Copyright &copy; NiajM Proshop</strong>
             </ListGroup>
         </footer >
     )
